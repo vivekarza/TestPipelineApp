@@ -8,6 +8,8 @@ trigger:
 
 pool:
   vmImage: 'windows-latest'
+  demands:
+  - agent.name -equals DESKTOP-O9R6TRK
 
 variables:
   solution: '**/*.sln'
